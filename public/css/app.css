@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Bagian Navbar */
+
+.navbar {
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: 1px solid black;
+}
+.container {
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: #5272fe;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #ff65c3;
+    font-weight: bold;
+    border-bottom: 2px solid #ff65c3;
+}
+
+.btn-masuk {
+    background-color: #ff65c3;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.btn-perusahaan {
+    background-color: #4169e1;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.navbar-toggler {
+    background-color: #5272fe;
+}
+
+/* Gaya untuk bagian kanan navbar */
+@media (min-width: 992px) {
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-right-section {
+        margin-left: auto;
+    }
+}
+
+/* Bagian footer */
+
+.footer {
+    background: linear-gradient(to bottom, white, #4169e1);
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo {
+    height: auto;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #f8f9fa;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #ff69b4;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #35b6fc;
+}
